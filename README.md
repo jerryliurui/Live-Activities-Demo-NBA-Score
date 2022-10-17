@@ -47,4 +47,7 @@ extension AnyTransition {
 
 ### 效果截图
 ![截屏2022-08-18 21 26 13](https://github.com/jerryliurui/Live-Activities-Demo-NBA-Score/blob/main/iPhone%20Space%20Gold%20Left.png)
-<img src="[images/cover.png](https://github.com/jerryliurui/Live-Activities-Demo-NBA-Score/blob/main/iPhone%20Space%20Gold%20Left.png)" alt="Cover" width="50%"/>
+
+![截屏2022-08-18 21 26 13](https://github.com/jerryliurui/Live-Activities-Demo-NBA-Score/blob/main/IMG_0066.PNG)
+
+![截屏2022-08-18 21 26 13](https://github.com/jerryliurui/Live-Activities-Demo-NBA-Score/blob/main/iPhone%20Space%20Gold%20Right.png)
