@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70370F4028F7B4630016E94F /* LuminanceReduced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70370F3F28F7B4630016E94F /* LuminanceReduced.swift */; };
+		70370F4128F7B4630016E94F /* LuminanceReduced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70370F3F28F7B4630016E94F /* LuminanceReduced.swift */; };
+		7079E8BD28F6B3590051E7F7 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079E8BC28F6B3590051E7F7 /* Animation.swift */; };
+		7079E8BE28F6B3590051E7F7 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079E8BC28F6B3590051E7F7 /* Animation.swift */; };
+		7079E8C028F6B4570051E7F7 /* NBALiveTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079E8BF28F6B4570051E7F7 /* NBALiveTrigger.swift */; };
+		7079E8C128F6B4B70051E7F7 /* NBALiveTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079E8BF28F6B4570051E7F7 /* NBALiveTrigger.swift */; };
+		7079E8C328F6B6350051E7F7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079E8C228F6B6350051E7F7 /* StringExtension.swift */; };
+		7079E8C428F6B7110051E7F7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079E8C228F6B6350051E7F7 /* StringExtension.swift */; };
+		7079E8C528F6B73E0051E7F7 /* NBAWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD2228F6960D00A6E5C1 /* NBAWidgetLiveActivity.swift */; };
+		7079E8C628F6B84C0051E7F7 /* NBATeamLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD3528F698CE00A6E5C1 /* NBATeamLogoView.swift */; };
+		7079E8C728F6B84F0051E7F7 /* NBAWidgetLockScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD3828F69C7400A6E5C1 /* NBAWidgetLockScreenView.swift */; };
+		7079E8CB28F6C1F00051E7F7 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079E8C928F6C1F00051E7F7 /* PlayerView.swift */; };
+		7079E8CC28F6C3980051E7F7 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079E8C928F6C1F00051E7F7 /* PlayerView.swift */; };
+		7079E8CE28F6C8380051E7F7 /* LeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079E8CD28F6C8380051E7F7 /* LeadingView.swift */; };
+		7079E8CF28F6C8CD0051E7F7 /* LeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079E8CD28F6C8380051E7F7 /* LeadingView.swift */; };
+		7079E8D128F6C9AE0051E7F7 /* TrailingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079E8D028F6C9AE0051E7F7 /* TrailingView.swift */; };
+		7079E8D228F6CA0B0051E7F7 /* TrailingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7079E8D028F6C9AE0051E7F7 /* TrailingView.swift */; };
+		70FDAD0828F695C200A6E5C1 /* NBALiveActivitiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD0728F695C200A6E5C1 /* NBALiveActivitiesApp.swift */; };
+		70FDAD0A28F695C200A6E5C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD0928F695C200A6E5C1 /* ContentView.swift */; };
+		70FDAD0C28F695C300A6E5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FDAD0B28F695C300A6E5C1 /* Assets.xcassets */; };
+		70FDAD0F28F695C300A6E5C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FDAD0E28F695C300A6E5C1 /* Preview Assets.xcassets */; };
+		70FDAD1C28F6960D00A6E5C1 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FDAD1B28F6960D00A6E5C1 /* WidgetKit.framework */; };
+		70FDAD1E28F6960D00A6E5C1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FDAD1D28F6960D00A6E5C1 /* SwiftUI.framework */; };
+		70FDAD2128F6960D00A6E5C1 /* NBAWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD2028F6960D00A6E5C1 /* NBAWidgetBundle.swift */; };
+		70FDAD2328F6960D00A6E5C1 /* NBAWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD2228F6960D00A6E5C1 /* NBAWidgetLiveActivity.swift */; };
+		70FDAD2528F6960D00A6E5C1 /* NBAWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD2428F6960D00A6E5C1 /* NBAWidget.swift */; };
+		70FDAD2828F6960E00A6E5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FDAD2728F6960E00A6E5C1 /* Assets.xcassets */; };
+		70FDAD2A28F6960E00A6E5C1 /* NBAWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD2628F6960D00A6E5C1 /* NBAWidget.intentdefinition */; };
+		70FDAD2B28F6960E00A6E5C1 /* NBAWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD2628F6960D00A6E5C1 /* NBAWidget.intentdefinition */; };
+		70FDAD2E28F6960E00A6E5C1 /* NBAWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 70FDAD1928F6960D00A6E5C1 /* NBAWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		70FDAD3628F698CE00A6E5C1 /* NBATeamLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD3528F698CE00A6E5C1 /* NBATeamLogoView.swift */; };
+		70FDAD3728F6992A00A6E5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FDAD0B28F695C300A6E5C1 /* Assets.xcassets */; };
+		70FDAD3928F69C7400A6E5C1 /* NBAWidgetLockScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD3828F69C7400A6E5C1 /* NBAWidgetLockScreenView.swift */; };
+		70FDAD3E28F6A28E00A6E5C1 /* NBATeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD3D28F6A28E00A6E5C1 /* NBATeam.swift */; };
+		70FDAD3F28F6A28E00A6E5C1 /* NBATeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD3D28F6A28E00A6E5C1 /* NBATeam.swift */; };
+		70FDAD4128F6A6E100A6E5C1 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD4028F6A6E100A6E5C1 /* ScoreView.swift */; };
+		70FDAD4228F6A6E100A6E5C1 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDAD4028F6A6E100A6E5C1 /* ScoreView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70FDAD2C28F6960E00A6E5C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70FDACFC28F695C200A6E5C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70FDAD1828F6960D00A6E5C1;
+			remoteInfo = NBAWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		70FDAD3228F6960E00A6E5C1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				70FDAD2E28F6960E00A6E5C1 /* NBAWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		70370F3F28F7B4630016E94F /* LuminanceReduced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminanceReduced.swift; sourceTree = "<group>"; };
+		7079E8BC28F6B3590051E7F7 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		7079E8BF28F6B4570051E7F7 /* NBALiveTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBALiveTrigger.swift; sourceTree = "<group>"; };
+		7079E8C228F6B6350051E7F7 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		7079E8C828F6B8F90051E7F7 /* NBALiveActivities.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NBALiveActivities.entitlements; sourceTree = "<group>"; };
+		7079E8C928F6C1F00051E7F7 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		7079E8CD28F6C8380051E7F7 /* LeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingView.swift; sourceTree = "<group>"; };
+		7079E8D028F6C9AE0051E7F7 /* TrailingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingView.swift; sourceTree = "<group>"; };
+		70FDAD0428F695C200A6E5C1 /* NBALiveActivities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBALiveActivities.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70FDAD0728F695C200A6E5C1 /* NBALiveActivitiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBALiveActivitiesApp.swift; sourceTree = "<group>"; };
+		70FDAD0928F695C200A6E5C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		70FDAD0B28F695C300A6E5C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70FDAD0E28F695C300A6E5C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		70FDAD1928F6960D00A6E5C1 /* NBAWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NBAWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		70FDAD1B28F6960D00A6E5C1 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		70FDAD1D28F6960D00A6E5C1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		70FDAD2028F6960D00A6E5C1 /* NBAWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAWidgetBundle.swift; sourceTree = "<group>"; };
+		70FDAD2228F6960D00A6E5C1 /* NBAWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		70FDAD2428F6960D00A6E5C1 /* NBAWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAWidget.swift; sourceTree = "<group>"; };
+		70FDAD2628F6960D00A6E5C1 /* NBAWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = NBAWidget.intentdefinition; sourceTree = "<group>"; };
+		70FDAD2728F6960E00A6E5C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70FDAD2928F6960E00A6E5C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70FDAD3528F698CE00A6E5C1 /* NBATeamLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBATeamLogoView.swift; sourceTree = "<group>"; };
+		70FDAD3828F69C7400A6E5C1 /* NBAWidgetLockScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAWidgetLockScreenView.swift; sourceTree = "<group>"; };
+		70FDAD3D28F6A28E00A6E5C1 /* NBATeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBATeam.swift; sourceTree = "<group>"; };
+		70FDAD4028F6A6E100A6E5C1 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70FDAD0128F695C200A6E5C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FDAD1628F6960D00A6E5C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FDAD1E28F6960D00A6E5C1 /* SwiftUI.framework in Frameworks */,
+				70FDAD1C28F6960D00A6E5C1 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70FDACFB28F695C200A6E5C1 = {
+			isa = PBXGroup;
+			children = (
+				70FDAD0628F695C200A6E5C1 /* NBALiveActivities */,
+				70FDAD1F28F6960D00A6E5C1 /* NBAWidget */,
+				70FDAD1A28F6960D00A6E5C1 /* Frameworks */,
+				70FDAD0528F695C200A6E5C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70FDAD0528F695C200A6E5C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70FDAD0428F695C200A6E5C1 /* NBALiveActivities.app */,
+				70FDAD1928F6960D00A6E5C1 /* NBAWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70FDAD0628F695C200A6E5C1 /* NBALiveActivities */ = {
+			isa = PBXGroup;
+			children = (
+				7079E8C828F6B8F90051E7F7 /* NBALiveActivities.entitlements */,
+				70FDAD0728F695C200A6E5C1 /* NBALiveActivitiesApp.swift */,
+				70FDAD0928F695C200A6E5C1 /* ContentView.swift */,
+				70FDAD0B28F695C300A6E5C1 /* Assets.xcassets */,
+				70FDAD0D28F695C300A6E5C1 /* Preview Content */,
+				70FDAD3D28F6A28E00A6E5C1 /* NBATeam.swift */,
+				7079E8C228F6B6350051E7F7 /* StringExtension.swift */,
+				7079E8BF28F6B4570051E7F7 /* NBALiveTrigger.swift */,
+			);
+			path = NBALiveActivities;
+			sourceTree = "<group>";
+		};
+		70FDAD0D28F695C300A6E5C1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				70FDAD0E28F695C300A6E5C1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		70FDAD1A28F6960D00A6E5C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70FDAD1B28F6960D00A6E5C1 /* WidgetKit.framework */,
+				70FDAD1D28F6960D00A6E5C1 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70FDAD1F28F6960D00A6E5C1 /* NBAWidget */ = {
+			isa = PBXGroup;
+			children = (
+				70FDAD2028F6960D00A6E5C1 /* NBAWidgetBundle.swift */,
+				70FDAD2228F6960D00A6E5C1 /* NBAWidgetLiveActivity.swift */,
+				70FDAD2428F6960D00A6E5C1 /* NBAWidget.swift */,
+				70FDAD2628F6960D00A6E5C1 /* NBAWidget.intentdefinition */,
+				70FDAD2728F6960E00A6E5C1 /* Assets.xcassets */,
+				70FDAD2928F6960E00A6E5C1 /* Info.plist */,
+				70FDAD3528F698CE00A6E5C1 /* NBATeamLogoView.swift */,
+				70FDAD3828F69C7400A6E5C1 /* NBAWidgetLockScreenView.swift */,
+				70FDAD4028F6A6E100A6E5C1 /* ScoreView.swift */,
+				7079E8BC28F6B3590051E7F7 /* Animation.swift */,
+				7079E8C928F6C1F00051E7F7 /* PlayerView.swift */,
+				7079E8CD28F6C8380051E7F7 /* LeadingView.swift */,
+				7079E8D028F6C9AE0051E7F7 /* TrailingView.swift */,
+				70370F3F28F7B4630016E94F /* LuminanceReduced.swift */,
+			);
+			path = NBAWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70FDAD0328F695C200A6E5C1 /* NBALiveActivities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70FDAD1228F695C300A6E5C1 /* Build configuration list for PBXNativeTarget "NBALiveActivities" */;
+			buildPhases = (
+				70FDAD0028F695C200A6E5C1 /* Sources */,
+				70FDAD0128F695C200A6E5C1 /* Frameworks */,
+				70FDAD0228F695C200A6E5C1 /* Resources */,
+				70FDAD3228F6960E00A6E5C1 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70FDAD2D28F6960E00A6E5C1 /* PBXTargetDependency */,
+			);
+			name = NBALiveActivities;
+			productName = NBALiveActivities;
+			productReference = 70FDAD0428F695C200A6E5C1 /* NBALiveActivities.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70FDAD1828F6960D00A6E5C1 /* NBAWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70FDAD2F28F6960E00A6E5C1 /* Build configuration list for PBXNativeTarget "NBAWidgetExtension" */;
+			buildPhases = (
+				70FDAD1528F6960D00A6E5C1 /* Sources */,
+				70FDAD1628F6960D00A6E5C1 /* Frameworks */,
+				70FDAD1728F6960D00A6E5C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBAWidgetExtension;
+			productName = NBAWidgetExtension;
+			productReference = 70FDAD1928F6960D00A6E5C1 /* NBAWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70FDACFC28F695C200A6E5C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					70FDAD0328F695C200A6E5C1 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					70FDAD1828F6960D00A6E5C1 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 70FDACFF28F695C200A6E5C1 /* Build configuration list for PBXProject "NBALiveActivities" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70FDACFB28F695C200A6E5C1;
+			productRefGroup = 70FDAD0528F695C200A6E5C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70FDAD0328F695C200A6E5C1 /* NBALiveActivities */,
+				70FDAD1828F6960D00A6E5C1 /* NBAWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70FDAD0228F695C200A6E5C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FDAD0F28F695C300A6E5C1 /* Preview Assets.xcassets in Resources */,
+				70FDAD0C28F695C300A6E5C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FDAD1728F6960D00A6E5C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FDAD3728F6992A00A6E5C1 /* Assets.xcassets in Resources */,
+				70FDAD2828F6960E00A6E5C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70FDAD0028F695C200A6E5C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7079E8CF28F6C8CD0051E7F7 /* LeadingView.swift in Sources */,
+				70FDAD3E28F6A28E00A6E5C1 /* NBATeam.swift in Sources */,
+				7079E8C728F6B84F0051E7F7 /* NBAWidgetLockScreenView.swift in Sources */,
+				70FDAD0A28F695C200A6E5C1 /* ContentView.swift in Sources */,
+				70370F4028F7B4630016E94F /* LuminanceReduced.swift in Sources */,
+				7079E8CC28F6C3980051E7F7 /* PlayerView.swift in Sources */,
+				7079E8C528F6B73E0051E7F7 /* NBAWidgetLiveActivity.swift in Sources */,
+				7079E8D228F6CA0B0051E7F7 /* TrailingView.swift in Sources */,
+				7079E8C028F6B4570051E7F7 /* NBALiveTrigger.swift in Sources */,
+				70FDAD2B28F6960E00A6E5C1 /* NBAWidget.intentdefinition in Sources */,
+				7079E8C328F6B6350051E7F7 /* StringExtension.swift in Sources */,
+				70FDAD0828F695C200A6E5C1 /* NBALiveActivitiesApp.swift in Sources */,
+				7079E8BD28F6B3590051E7F7 /* Animation.swift in Sources */,
+				7079E8C628F6B84C0051E7F7 /* NBATeamLogoView.swift in Sources */,
+				70FDAD4128F6A6E100A6E5C1 /* ScoreView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FDAD1528F6960D00A6E5C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7079E8CE28F6C8380051E7F7 /* LeadingView.swift in Sources */,
+				7079E8C128F6B4B70051E7F7 /* NBALiveTrigger.swift in Sources */,
+				70FDAD2A28F6960E00A6E5C1 /* NBAWidget.intentdefinition in Sources */,
+				70FDAD4228F6A6E100A6E5C1 /* ScoreView.swift in Sources */,
+				70370F4128F7B4630016E94F /* LuminanceReduced.swift in Sources */,
+				7079E8CB28F6C1F00051E7F7 /* PlayerView.swift in Sources */,
+				70FDAD3F28F6A28E00A6E5C1 /* NBATeam.swift in Sources */,
+				7079E8D128F6C9AE0051E7F7 /* TrailingView.swift in Sources */,
+				70FDAD3928F69C7400A6E5C1 /* NBAWidgetLockScreenView.swift in Sources */,
+				70FDAD2328F6960D00A6E5C1 /* NBAWidgetLiveActivity.swift in Sources */,
+				70FDAD2128F6960D00A6E5C1 /* NBAWidgetBundle.swift in Sources */,
+				70FDAD3628F698CE00A6E5C1 /* NBATeamLogoView.swift in Sources */,
+				7079E8BE28F6B3590051E7F7 /* Animation.swift in Sources */,
+				7079E8C428F6B7110051E7F7 /* StringExtension.swift in Sources */,
+				70FDAD2528F6960D00A6E5C1 /* NBAWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70FDAD2D28F6960E00A6E5C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70FDAD1828F6960D00A6E5C1 /* NBAWidgetExtension */;
+			targetProxy = 70FDAD2C28F6960E00A6E5C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		70FDAD1028F695C300A6E5C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70FDAD1128F695C300A6E5C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70FDAD1328F695C300A6E5C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NBALiveActivities/NBALiveActivities.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NBALiveActivities/Preview Content\"";
+				DEVELOPMENT_TEAM = 52CM5QMX26;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.jerryliu.liveactivitiesdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70FDAD1428F695C300A6E5C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NBALiveActivities/NBALiveActivities.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NBALiveActivities/Preview Content\"";
+				DEVELOPMENT_TEAM = 52CM5QMX26;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.jerryliu.liveactivitiesdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70FDAD3028F6960E00A6E5C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52CM5QMX26;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NBAWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NBAWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.jerryliu.liveactivitiesdemo.NBAWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70FDAD3128F6960E00A6E5C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52CM5QMX26;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NBAWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NBAWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustc.jerryliu.liveactivitiesdemo.NBAWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70FDACFF28F695C200A6E5C1 /* Build configuration list for PBXProject "NBALiveActivities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FDAD1028F695C300A6E5C1 /* Debug */,
+				70FDAD1128F695C300A6E5C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70FDAD1228F695C300A6E5C1 /* Build configuration list for PBXNativeTarget "NBALiveActivities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FDAD1328F695C300A6E5C1 /* Debug */,
+				70FDAD1428F695C300A6E5C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70FDAD2F28F6960E00A6E5C1 /* Build configuration list for PBXNativeTarget "NBAWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FDAD3028F6960E00A6E5C1 /* Debug */,
+				70FDAD3128F6960E00A6E5C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70FDACFC28F695C200A6E5C1 /* Project object */;
+}
