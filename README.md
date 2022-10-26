@@ -45,6 +45,22 @@ extension AnyTransition {
 }
 ```
 
+### 关于Push更新
+如果是个人开发者测试来使用 可以参考这位大佬的 https://github.com/rakutentech/macos-push-tester Push工具
+修改相关的代码 build mac app 
+PusherStore.swift 中 push func中添加
+```
+if data.pushtype == "liveactivity"{
+  topic = "\(appBundleID).push-type.liveactivity"
+}
+```
+StoryBoard中添加pushtype : liveactivity
+
+运行后按照要求填写payload、证书、bundleId等信息
+PS payload格式一定要按照你定义的contentstate字段
+PS payload中timestamp 每次发送push都要变动，否则会出现无法更新的情况
+Token使用控制台打印的token字符串
+
 ### 效果截图
 ![截屏2022-08-18 21 26 13](https://github.com/jerryliurui/Live-Activities-Demo-NBA-Score/blob/main/iPhone%20Space%20Gold%20Left.png)
 
