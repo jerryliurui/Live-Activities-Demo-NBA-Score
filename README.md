@@ -1,7 +1,53 @@
 # Live-Activities-Demo-NBA-Score
 Live Activities and Dynamic Island Demo for NBA score
 
-Xcode16.1 beta 
+本Demo 已针对 Xcode15 beta 2 进行适配，并新增按钮来验证实时小组件可以支持按钮交互:
+```
+struct favorAppIntent: WidgetConfigurationIntent {
+    static var title: LocalizedStringResource = "Configuration"
+    static var description = IntentDescription("This is an example widget.")
+
+    // An example configurable parameter.
+    @Parameter(title: "Like")
+    var teamId: String
+    
+    init() {
+        
+    }
+    
+    //to hold data
+    init(teamId: String) {
+        self.teamId = teamId
+    }
+    
+    func perform() async throws -> some IntentResult {
+        if let index = MatchDataManager.shared.teams.firstIndex(where: {
+            $0.teamId == teamId
+        }) {
+            let resultTeam = MatchDataManager.shared.teams[index];
+            resultTeam.likeNum += 10
+            NBALiveTrigger.shared.updateLiveActivitiesLAVSWA()
+        }
+        
+        return .result()
+    }
+}
+```
+添加按钮，首先要引入import AppIntents 框架，并区分系统版本:
+```
+if #available(iOS 17.0, *) {
+...
+ Button(intent: favorAppIntent(teamId: team.teamId)) {
+    Image(systemName: "hand.thumbsup")
+        .foregroundColor(.white)
+ }
+.buttonStyle(.plain)
+}
+} else {
+// other View
+}
+```
+
 ### 创建Live Activities Target
 Apple 在新的beta版中代码框架和补全给的更加完善，会自动帮咱们进行bundle的绑定和灵动岛相关代码的
 新建Target选择Live Activities:
