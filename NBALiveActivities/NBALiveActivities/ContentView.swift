@@ -9,7 +9,7 @@ import SwiftUI
 import ActivityKit
 
 struct ContentView: View {
-    let gameTrigger: NBALiveTrigger = NBALiveTrigger()
+    let gameTrigger: NBALiveTrigger = NBALiveTrigger.shared
     var body: some View {
         VStack {
             VStack(alignment: .leading, spacing: 8.0) {
@@ -62,7 +62,7 @@ struct ContentView: View {
                             .main
                             .asyncAfter(deadline: .now() + 0,
                                         execute: {
-                                gameTrigger.startPushLiveActivities()
+                                gameTrigger.startLiveActivities()
                             })
                         
                     } label: {
@@ -70,7 +70,6 @@ struct ContentView: View {
                             .font(.system(size: 18, weight: .medium))
                     }
                 }
-                
             }
             .padding(.all, 20.0)
             .padding(.vertical, 20)

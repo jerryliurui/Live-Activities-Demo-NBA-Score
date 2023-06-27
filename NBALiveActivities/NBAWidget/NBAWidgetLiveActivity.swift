@@ -14,6 +14,8 @@ struct NBAWidgetAttributes: ActivityAttributes {
         // Dynamic stateful properties about your activity go here!
         var homeScore: Int
         var guestScore: Int
+        var homeLike: Int
+        var guestLike: Int
         var tips: String
         
         var score: String?
@@ -29,7 +31,7 @@ struct NBAWidgetLiveActivity: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: NBAWidgetAttributes.self) { context in
             // Lock screen/banner UI goes here
-            NBAWidgetLockScreenView(attribute: context.attributes, state: context.state)
+            NBAWidgetLockScreenView(attribute: context.attributes,guestTeam: context.attributes.guest, homeTeam: context.attributes.home, state: context.state)
             .activityBackgroundTint(Color(context.attributes.home.teamColor))
             .activitySystemActionForegroundColor(Color(context.attributes.home.teamGuestColor))
             
@@ -38,10 +40,10 @@ struct NBAWidgetLiveActivity: Widget {
                 // Expanded UI goes here.  Compose the expanded UI through
                 // various regions, like leading/trailing/center/bottom
                 DynamicIslandExpandedRegion(.leading) {
-                    NBATeamLogoView(team: context.attributes.guest, inDynamicIsland: true)
+                    NBATeamLogoView(team: context.attributes.guest, inDynamicIsland: true, likeNum: context.state.guestLike)
                 }
                 DynamicIslandExpandedRegion(.trailing) {
-                    NBATeamLogoView(team: context.attributes.home, inDynamicIsland: true)
+                    NBATeamLogoView(team: context.attributes.home, inDynamicIsland: true, likeNum: context.state.homeLike)
                 }
                 DynamicIslandExpandedRegion(.bottom) {
                     

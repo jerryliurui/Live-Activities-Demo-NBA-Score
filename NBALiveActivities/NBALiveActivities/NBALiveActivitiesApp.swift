@@ -51,4 +51,15 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print("Push 注册失败 \(error.localizedDescription)")
     }
+    
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        super.touchesBegan(touches, with: event)
+//        let events = event!.allTouches
+//        let touch = events!.first
+//        let location = touch!.locationInView(self.window)
+//        let statusBarFrame = UIApplication.shared.statusBarManager.dynamicIsland(verticalPlacement: <#T##WidgetKit.DynamicIslandExpandedRegionVerticalPlacement#>)
+//        if CGRectContainsPoint(statusBarFrame, location) {
+//            NSNotificationCenter.defaultCenter().postNotificationName("statusBarSelected", object: nil)
+//        }
+//    }
 }

@@ -53,13 +53,6 @@ struct ScoreView: View {
                     .font(.footnote)
                     .foregroundStyle(.white)
             }
-            
-            if let scoreNum = state.score {
-                Text(scoreNum)
-                    .transition(.moveAndFade)
-                    .font(.footnote)
-                    .foregroundStyle(.white)
-            }
         }
         .padding(.vertical, 6.0)
     }

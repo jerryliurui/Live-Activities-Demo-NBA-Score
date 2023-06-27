@@ -7,11 +7,14 @@
 
 import SwiftUI
 import WidgetKit
+import AppIntents
 
 struct NBATeamLogoView: View {
     var team: NBATeam
     
     var inDynamicIsland: Bool
+    
+    var likeNum: Int
     
     var body: some View {
         ZStack {
@@ -26,11 +29,25 @@ struct NBATeamLogoView: View {
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                     
-                    Text(team.teamState)
-                        .lineLimit(1)
-                        .font(.footnote)
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.center)
+                    
+                    if #available(iOS 17.0, *) {
+                        HStack {
+                            Text(likeNum.formatted())
+                                .foregroundColor(.white)
+                                .contentTransition(.numericText())
+                            Button(intent: favorAppIntent(teamId: team.teamId)) {
+                                Image(systemName: "hand.thumbsup")
+                                    .foregroundColor(.white)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    } else {
+                        Text(team.teamState)
+                            .lineLimit(1)
+                            .font(.footnote)
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                    }
                 }
                 .frame(width: 70, height: 120)
                 .padding(.bottom, 8)
@@ -52,12 +69,25 @@ struct NBATeamLogoView: View {
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                     
-                    Text(team.teamState)
-                        .modifier(LuminanceReducedLinearGradientColor(foregroundColor: Color(team.teamColor)))
-                        .lineLimit(1)
-                        .font(.footnote)
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.center)
+                    if #available(iOS 17.0, *) {
+                        HStack {
+                            Text(likeNum.formatted())
+                                .foregroundColor(.white)
+                                .contentTransition(.numericText())
+                            Button(intent: favorAppIntent(teamId: team.teamId)) {
+                                Image(systemName: "hand.thumbsup")
+                                    .foregroundColor(.white)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    } else {
+                        Text(team.teamState)
+                            .modifier(LuminanceReducedLinearGradientColor(foregroundColor: Color(team.teamColor)))
+                            .lineLimit(1)
+                            .font(.footnote)
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                    }
                 }
                 .frame(width: 70, height: 120)
                 .padding(.bottom, 8)
@@ -72,6 +102,7 @@ struct NBATeamLogoView: View {
                 }
             }
         }
+        .widgetBackground()
     }
 }
 
@@ -100,9 +131,23 @@ extension View {
     }
 }
 
+extension View {
+     func widgetBackground() -> some View {
+         if #available(iOS 17.0, *) {
+             return containerBackground(for: .widget) {
+                 Color.clear
+             }
+         } else {
+             return background {
+                 Color.clear
+             }
+         }
+    }
+}
+
 struct NBATeamLogoView_Previews: PreviewProvider {
     static var previews: some View {
-        NBATeamLogoView(team: NBATeam(teamName: "Lakers", teamId: "Lakers", teamLogo: "Los Angles Lakers logo", teamColor: "LakerHome", teamGuestColor: "LakerGuest", teamState: "12胜3负"), inDynamicIsland: false)
+        NBATeamLogoView(team: MatchDataManager.shared.teams.filter { $0.teamId == "Lakers" }.first!, inDynamicIsland: false,likeNum: 100)
             .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }
